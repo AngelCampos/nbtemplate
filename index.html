@@ -1,0 +1,23 @@
+---
+layout: default
+---
+
+<div class="home">
+
+  <h1 class="page-heading" style="font-size:42px;letter-spacing:-1px;line-height:1;">Entries</h1>
+
+  <div id="archives">
+    {% for tag in site.tags %}
+      <div class="archive-group">
+      {% capture tag_name %}{{ tag | first }}{% endcapture %}
+        <p style="font-size:30px;margin-top:20px;" id="#{{ tag_name | slugize }}">{{ tag_name }}</p>
+        {% for post in site.tags[tag_name] %}
+          <article class="archive-item">
+            <a class="post-link" href="{{ root_url }}{{ post.url }}">{{post.title}}</a><span class="post-meta">  –  {{ post.date | date: "%b %-d, %Y" }}</span>
+          </article>
+        {% endfor %}
+      </div>
+    {% endfor %}
+  </div>
+
+</div>
