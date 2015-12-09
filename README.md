@@ -1,4 +1,4 @@
-# nb-template
+# nbtemplate
 
 Template for open lab notebooks. To create a new lab notebook:
 
