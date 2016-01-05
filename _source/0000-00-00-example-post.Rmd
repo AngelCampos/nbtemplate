@@ -1,0 +1,41 @@
+---
+layout: post
+date: 0000-00-00
+title:  "Example Title"
+categories: [label]
+tags: [experiment]
+published: false
+---
+
+Need text here before any code blocks such as one to import libraries or something
+
+```{r, comment = F, message = F, warning = F}
+# load necessary libraries
+library(dplyr)
+library(cowplot)
+```
+
+## Title for something
+
+Text about something
+
+```{r, eval = F}
+# some code to evaluate
+x <- c(1,2,3,4,5)
+y <- c(5,6,7,8,9)
+plot(x, y)
+```
+
+-----------
+
+<br>
+
+**Last compiled on `r Sys.Date()`**
+
+### Session Info
+
+```{r, echo = F}
+sessionInfo()
+```
+
+[hiddenLink]: http://thisgoesnowhere.com
