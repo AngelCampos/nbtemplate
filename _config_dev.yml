@@ -2,14 +2,19 @@
 title: ENB
 email: philippross369@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-   Statistical Genomics as taught by Professor Naomi Altman as part of the
-   Masters Certificate in Applied Bioinformatics at Penn State University
+    Put your notebook description here
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://pzross.com" # the base hostname & protocol for your site
+url: "" # the base hostname & protocol for your site
 twitter_username: thephilross
 github_username:  thephilross
 
 # Build settings
 markdown: kramdown
+highlighter: pygments
 
 host: 0.0.0.0
+port: 4000
+
+exclude:
+    - README.md
+		- references.bib

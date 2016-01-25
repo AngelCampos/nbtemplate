@@ -1,0 +1,60 @@
+---
+layout: page
+title: manuscript
+permalink: /manuscript/
+---
+
+* TOC
+{:toc}
+
+```{r, echo = F, comment = F, message = F, warning = F, cache = F}
+# knit everything from the project root
+knitr::opts_knit$set(root.dir = "./")
+```
+
+```{r, include = F, echo = F, comment = F, message = F, warning = F, cache = F}
+# read in bibliography
+library(knitcitations)
+options("citation_format" = "pandoc")
+citet(read.bibtex("references.bib"))
+```
+
+## Abstract
+<a href="#top">Back to top</a>
+
+## Introduction
+<a href="#top">Back to top</a>
+
+## Methods
+<a href="#top">Back to top</a>
+
+## Results
+<a href="#top">Back to top</a>
+
+## Discussion
+<a href="#top">Back to top</a>
+
+## Conclusions
+<a href="#top">Back to top</a>
+
+## References
+<a href="#top">Back to top</a>
+
+```{r, echo = F, cache = F, results = "asis"}
+bibliography(style = "nature")
+```
+
+-----------
+
+<br>
+
+**Last compiled on `r Sys.Date()`**
+
+## Session Info
+
+<a href="#top">Back to top</a>
+
+```{r, echo = F, cache = F}
+sessionInfo()
+```
+

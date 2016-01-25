@@ -1,0 +1,45 @@
+---
+layout: post
+date: 0000-00-00
+title: "Title"
+categories: [category]
+tags: [tag]
+published: true
+output:
+  html_document:
+  toc: true
+---
+
+* TOC
+{:toc}
+
+```{r, echo = F, comment = F, message = F, warning = F, cache = F}
+# load necessary libraries
+library(readr)
+library(knitr)
+# knit everything from the project root
+knitr::opts_knit$set(root.dir = "./")
+```
+
+## Section title
+
+<a href="#top">Back to top</a>
+
+```{r, eval = F}
+# print out contents of file
+```
+
+-----------
+
+<br>
+
+**Last compiled on `r Sys.Date()`**
+
+## Session Info
+
+<a href="#top">Back to top</a>
+
+```{r, echo = F, cache = F}
+sessionInfo()
+```
+
