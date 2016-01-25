@@ -10,7 +10,15 @@ github_username:  thephilross
 
 # Build settings
 markdown: kramdown
+
+kramdown:
+  auto_ids:     true
+  toc_levels:   1..2
+
 highlighter: pygments
+
+# show only published posts when serving remotely
+unpublished: false
 
 exclude:
     - README.md

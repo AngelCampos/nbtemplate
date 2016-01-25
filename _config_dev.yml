@@ -10,11 +10,19 @@ github_username:  thephilross
 
 # Build settings
 markdown: kramdown
+
+kramdown:
+  auto_ids:    true
+  toc_levels:  1..2
+
 highlighter: pygments
+
+# show unpublished posts when serving locally
+unpublished: true
 
 host: 0.0.0.0
 port: 4000
 
 exclude:
-    - README.md
-		- references.bib
+  - README.md
+  - references.bib

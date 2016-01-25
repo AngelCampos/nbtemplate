@@ -4,10 +4,7 @@ date: 0000-00-00
 title: "Title"
 categories: [category]
 tags: [tag]
-published: true
-output:
-  html_document:
-  toc: true
+published: false
 ---
 
 * TOC
