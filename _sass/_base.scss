@@ -48,11 +48,19 @@ img {
 }
 
 
+.center-image
+{
+    margin: 0 auto;
+    display: block;
+}
+
+
 
 /**
  * Figures
  */
 figure > img {
+    margin: 0 auto;
     display: block;
 }
 
