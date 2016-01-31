@@ -4,6 +4,9 @@ build <- function(a) {
 
   # fall back on 'kramdown' if markdown engine is not specified
   markdown <- servr:::jekyll_config('.', 'markdown', 'kramdown')
+  # fall back on '/' if baseurl is not specified
+  baseurl <- servr:::jekyll_config('.', 'baseurl', '/')
+
 
   # see if we need to use the Jekyll render in knitr
   if (markdown == 'kramdown') {
@@ -30,7 +33,7 @@ build <- function(a) {
 
   knitr::opts_knit$set(
     root.dir   = "./",
-    base.url   = "/",
+    base.url   = ifelse(baseurl == "/", "/", baseurl),
     verbose    = TRUE,
     progress   = TRUE,
     width      = 80
