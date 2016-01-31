@@ -26,7 +26,7 @@ vignettes/*.pdf
 *.out
 
 # Jekyll stuff
-_site/
+#_site/
 _data/
 _cache/
 .sass-cache/
