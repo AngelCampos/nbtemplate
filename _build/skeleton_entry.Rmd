@@ -5,6 +5,7 @@ title: "Title"
 categories: [category]
 tags: [tag]
 published: false
+comments: true
 ---
 
 * TOC
@@ -15,7 +16,7 @@ published: false
 library(readr)
 library(knitr)
 # knit everything from the project root
-knitr::opts_knit$set(root.dir = "./")
+#knitr::opts_knit$set(root.dir = "./")
 ```
 
 ## Section title

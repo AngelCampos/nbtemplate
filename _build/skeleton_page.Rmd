@@ -3,6 +3,7 @@ layout: page
 title: Title
 permalink: /title/
 published: false
+comments: true
 ---
 
 * TOC
@@ -12,7 +13,7 @@ published: false
 # load necessary libraries
 
 # knit everything from the project root
-knitr::opts_knit$set(root.dir = "./")
+# knitr::opts_knit$set(root.dir = "./")
 ```
 
 ## Section title
