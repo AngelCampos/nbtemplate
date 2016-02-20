@@ -12,11 +12,7 @@ comments: true
 {:toc}
 
 ```{r, echo = F, comment = F, message = F, warning = F, cache = F}
-# load necessary libraries
-library(readr)
-library(knitr)
-# knit everything from the project root
-#knitr::opts_knit$set(root.dir = "./")
+source()
 ```
 
 ## Section title
